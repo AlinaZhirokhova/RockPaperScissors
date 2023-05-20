@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-image: url(fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    align-items: flex-start;
+}
+
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.app {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20%;
+    gap: 32px;
+}
+
+.input {
+    width: 250px;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.input::placeholder {
+    color: rgba(0, 0, 0, 0.604);
+}
+
+.button {
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    outline: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

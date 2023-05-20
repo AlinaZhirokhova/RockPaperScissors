@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Камень, ножницы, бумага</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="app center"></div>
+    <script>
+      window.application = {
+        blocks: {},
+        screens: {},
+        renderScreen: function (screenName) {
+          app.innerHTML = "";
+          this.timers.forEach(timerId => clearInterval(timerId))
+          this.screens[screenName]();
+        },
+        renderBlock: function (blockName, container) {
+          this.blocks[blockName](container);
+        },
+        timers: [],
+        token: null,
+        id: null,
+        enemy: null,
+      };
+    </script>
+    <script src="request.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
